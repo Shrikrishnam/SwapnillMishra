@@ -1,0 +1,101 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="logo mx-5">
+        <img
+          src="assets\img\img.jpg"
+          class="float-left rounded-circle p-2"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-9">
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <button
+                class="nav-item nav-link btn btn-block"
+                (click)="landingpage()"
+              >
+                Home
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="nav-item nav-link btn btn-block"
+                (click)="placeAppointment()"
+              >
+                Place Appointment
+              </button>
+            </li>
+
+            <li class="nav-item">
+              <button
+                class="nav-item nav-link btn btn-block"
+                (click)="viewAppointment()"
+              >
+                View Appointment
+              </button>
+            </li>
+
+            <li class="nav-item">
+              <button
+                class="nav-item nav-link btn btn-block"
+                (click)="contactUspage()"
+              >
+                Contact Us
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="sidebar">
+        <div class="nav navbar-nav">
+          <button
+            class="nav-item nav-link btn btn-block btn-primary"
+            (click)="landingpage()"
+          >
+            Home
+          </button>
+          <button
+            class="nav-item nav-link btn btn-block btn-primary"
+            (click)="placeAppointment()"
+          >
+            Place Appointment
+          </button>
+          <button
+            class="nav-item nav-link btn btn-block btn-primary"
+            (click)="viewAppointment()"
+          >
+            View Appointment
+          </button>
+          <button
+            class="nav-item nav-link btn btn-block btn-primary"
+            (click)="contactUspage()"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9"><router-outlet></router-outlet></div>
+  </div>
+</div>
